@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		90D71CD42CCCFBBF0060C372 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90D71CBB2CCCFBBA0060C372 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90D71CC22CCCFBBA0060C372;
+			remoteInfo = ColorMixerApp;
+		};
+		90D71CDE2CCCFBBF0060C372 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90D71CBB2CCCFBBA0060C372 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90D71CC22CCCFBBA0060C372;
+			remoteInfo = ColorMixerApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		90D71CC32CCCFBBA0060C372 /* ColorMixerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorMixerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D71CD32CCCFBBF0060C372 /* ColorMixerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorMixerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D71CDD2CCCFBBF0060C372 /* ColorMixerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorMixerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		90D71CC52CCCFBBA0060C372 /* ColorMixerApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ColorMixerApp;
+			sourceTree = "<group>";
+		};
+		90D71CD62CCCFBBF0060C372 /* ColorMixerAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ColorMixerAppTests;
+			sourceTree = "<group>";
+		};
+		90D71CE02CCCFBBF0060C372 /* ColorMixerAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ColorMixerAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90D71CC02CCCFBBA0060C372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D71CD02CCCFBBF0060C372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D71CDA2CCCFBBF0060C372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90D71CBA2CCCFBBA0060C372 = {
+			isa = PBXGroup;
+			children = (
+				90D71CC52CCCFBBA0060C372 /* ColorMixerApp */,
+				90D71CD62CCCFBBF0060C372 /* ColorMixerAppTests */,
+				90D71CE02CCCFBBF0060C372 /* ColorMixerAppUITests */,
+				90D71CC42CCCFBBA0060C372 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90D71CC42CCCFBBA0060C372 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90D71CC32CCCFBBA0060C372 /* ColorMixerApp.app */,
+				90D71CD32CCCFBBF0060C372 /* ColorMixerAppTests.xctest */,
+				90D71CDD2CCCFBBF0060C372 /* ColorMixerAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90D71CC22CCCFBBA0060C372 /* ColorMixerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90D71CE72CCCFBBF0060C372 /* Build configuration list for PBXNativeTarget "ColorMixerApp" */;
+			buildPhases = (
+				90D71CBF2CCCFBBA0060C372 /* Sources */,
+				90D71CC02CCCFBBA0060C372 /* Frameworks */,
+				90D71CC12CCCFBBA0060C372 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				90D71CC52CCCFBBA0060C372 /* ColorMixerApp */,
+			);
+			name = ColorMixerApp;
+			packageProductDependencies = (
+			);
+			productName = ColorMixerApp;
+			productReference = 90D71CC32CCCFBBA0060C372 /* ColorMixerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		90D71CD22CCCFBBF0060C372 /* ColorMixerAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90D71CEA2CCCFBBF0060C372 /* Build configuration list for PBXNativeTarget "ColorMixerAppTests" */;
+			buildPhases = (
+				90D71CCF2CCCFBBF0060C372 /* Sources */,
+				90D71CD02CCCFBBF0060C372 /* Frameworks */,
+				90D71CD12CCCFBBF0060C372 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90D71CD52CCCFBBF0060C372 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				90D71CD62CCCFBBF0060C372 /* ColorMixerAppTests */,
+			);
+			name = ColorMixerAppTests;
+			packageProductDependencies = (
+			);
+			productName = ColorMixerAppTests;
+			productReference = 90D71CD32CCCFBBF0060C372 /* ColorMixerAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		90D71CDC2CCCFBBF0060C372 /* ColorMixerAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90D71CED2CCCFBBF0060C372 /* Build configuration list for PBXNativeTarget "ColorMixerAppUITests" */;
+			buildPhases = (
+				90D71CD92CCCFBBF0060C372 /* Sources */,
+				90D71CDA2CCCFBBF0060C372 /* Frameworks */,
+				90D71CDB2CCCFBBF0060C372 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90D71CDF2CCCFBBF0060C372 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				90D71CE02CCCFBBF0060C372 /* ColorMixerAppUITests */,
+			);
+			name = ColorMixerAppUITests;
+			packageProductDependencies = (
+			);
+			productName = ColorMixerAppUITests;
+			productReference = 90D71CDD2CCCFBBF0060C372 /* ColorMixerAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90D71CBB2CCCFBBA0060C372 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					90D71CC22CCCFBBA0060C372 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					90D71CD22CCCFBBF0060C372 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 90D71CC22CCCFBBA0060C372;
+					};
+					90D71CDC2CCCFBBF0060C372 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 90D71CC22CCCFBBA0060C372;
+					};
+				};
+			};
+			buildConfigurationList = 90D71CBE2CCCFBBA0060C372 /* Build configuration list for PBXProject "ColorMixerApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90D71CBA2CCCFBBA0060C372;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 90D71CC42CCCFBBA0060C372 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90D71CC22CCCFBBA0060C372 /* ColorMixerApp */,
+				90D71CD22CCCFBBF0060C372 /* ColorMixerAppTests */,
+				90D71CDC2CCCFBBF0060C372 /* ColorMixerAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90D71CC12CCCFBBA0060C372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D71CD12CCCFBBF0060C372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D71CDB2CCCFBBF0060C372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90D71CBF2CCCFBBA0060C372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D71CCF2CCCFBBF0060C372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90D71CD92CCCFBBF0060C372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90D71CD52CCCFBBF0060C372 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90D71CC22CCCFBBA0060C372 /* ColorMixerApp */;
+			targetProxy = 90D71CD42CCCFBBF0060C372 /* PBXContainerItemProxy */;
+		};
+		90D71CDF2CCCFBBF0060C372 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90D71CC22CCCFBBA0060C372 /* ColorMixerApp */;
+			targetProxy = 90D71CDE2CCCFBBF0060C372 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		90D71CE52CCCFBBF0060C372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		90D71CE62CCCFBBF0060C372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90D71CE82CCCFBBF0060C372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ColorMixerApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = game.ColorMixerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		90D71CE92CCCFBBF0060C372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ColorMixerApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = game.ColorMixerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		90D71CEB2CCCFBBF0060C372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = game.ColorMixerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorMixerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ColorMixerApp";
+			};
+			name = Debug;
+		};
+		90D71CEC2CCCFBBF0060C372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = game.ColorMixerAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorMixerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ColorMixerApp";
+			};
+			name = Release;
+		};
+		90D71CEE2CCCFBBF0060C372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = game.ColorMixerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ColorMixerApp;
+			};
+			name = Debug;
+		};
+		90D71CEF2CCCFBBF0060C372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = game.ColorMixerAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ColorMixerApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90D71CBE2CCCFBBA0060C372 /* Build configuration list for PBXProject "ColorMixerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D71CE52CCCFBBF0060C372 /* Debug */,
+				90D71CE62CCCFBBF0060C372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90D71CE72CCCFBBF0060C372 /* Build configuration list for PBXNativeTarget "ColorMixerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D71CE82CCCFBBF0060C372 /* Debug */,
+				90D71CE92CCCFBBF0060C372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90D71CEA2CCCFBBF0060C372 /* Build configuration list for PBXNativeTarget "ColorMixerAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D71CEB2CCCFBBF0060C372 /* Debug */,
+				90D71CEC2CCCFBBF0060C372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90D71CED2CCCFBBF0060C372 /* Build configuration list for PBXNativeTarget "ColorMixerAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D71CEE2CCCFBBF0060C372 /* Debug */,
+				90D71CEF2CCCFBBF0060C372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90D71CBB2CCCFBBA0060C372 /* Project object */;
+}
