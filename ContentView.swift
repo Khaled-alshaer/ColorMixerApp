@@ -5,90 +5,133 @@
 import SwiftUI
 
 struct ContentView: View {
-    @AppStorage("redColorValue") var red: Double = 0.314
-    @AppStorage("greenColorValue") var green: Double = 0.746
-    @AppStorage("blueColorValue") var blue: Double = 1.000
+    @AppStorage("redColorValue") var red: Double = 1.0
+    @AppStorage("greenColorValue") var green: Double = 0.675
+    @AppStorage("blueColorValue") var blue: Double = 0.94
     
-    @AppStorage("isRedOn") var isRedOn: Bool = true
+    @AppStorage("isRedOn") var isRedOn: Bool = false
     @AppStorage("isGreenOn") var isGreenOn: Bool = true
     @AppStorage("isBlueOn") var isBlueOn: Bool = true
 
     var body: some View {
         GeometryReader { geometry in
-            VStack {
-                Text("Color Mixer")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .padding()
-
-                Rectangle()
-                    .fill(Color(red: isRedOn ? red : 0, green: isGreenOn ? green : 0, blue: isBlueOn ? blue : 0))
-                    .frame(height: geometry.size.height * 0.3) // 30% of the available height
-                    .cornerRadius(20)
-                    .shadow(radius: 10)
-                    .padding(.horizontal)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color.black, lineWidth: 2)
-                    )
-
-                VStack {
-                    ColorSlider(color: .red, value: $red, isOn: $isRedOn)
-                    ColorSlider(color: .green, value: $green, isOn: $isGreenOn)
-                    ColorSlider(color: .blue, value: $blue, isOn: $isBlueOn)
+            let isLandscape = geometry.size.width > geometry.size.height
+            let frameWidth = isLandscape ? geometry.size.width * 0.45 : geometry.size.width
+            let controlWidth = isLandscape ? geometry.size.width * 0.45 : geometry.size.width * 0.9
+            Group {
+                if isLandscape {
+                    HStack(spacing: 20) {
+                        colorView
+                            .frame(width: frameWidth, height: geometry.size.height * 0.85)
+                        VStack {
+                            Text("Color Mixer")
+                                .font(.largeTitle)
+                                .fontWeight(.bold)
+                                .padding(.bottom, 5)
+                            controls
+                                .frame(width: controlWidth)
+                            resetButton
+                                .frame(width: controlWidth)
+                                .padding(.top, 10)  // Adjust this value if needed
+                        }
+                    }
+                } else {
+                    VStack {
+                        Text("Color Mixer")
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                            .padding(.bottom, 5)
+                        colorView
+                        controls
+                            .frame(width: controlWidth)
+                        resetButton
+                            .padding(.top, 10)
+                    }
                 }
-                .padding()
-
-                Spacer()
-
-                Button("RESET") {
-                    resetValues()
-                }
-                .buttonStyle(ResetButtonStyle())
-                .padding(.horizontal)
-                .padding(.bottom)
             }
+            .padding(isLandscape ? .horizontal : .all, 10)
+            .animation(.default, value: isLandscape)
         }
     }
-
+    
+    var colorView: some View {
+        Rectangle()
+            .fill(Color(red: isRedOn ? red : 0, green: isGreenOn ? green : 0, blue: isBlueOn ? blue : 0))
+            .cornerRadius(20)
+            .shadow(radius: 10)
+    }
+    
+    var controls: some View {
+        VStack {
+            ColorControlView(color: .red, value: $red, isOn: $isRedOn)
+            ColorControlView(color: .green, value: $green, isOn: $isGreenOn)
+            ColorControlView(color: .blue, value: $blue, isOn: $isBlueOn)
+        }
+    }
+    
+    var resetButton: some View {
+        Button("RESET") {
+            resetValues()
+        }
+        .padding()
+        .background(Color.orange)
+        .foregroundColor(.white)
+        .cornerRadius(10)
+        .overlay(
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(Color.black, lineWidth: 2)
+        )
+    }
+    
     private func resetValues() {
-        red = 0.314
-        green = 0.746
-        blue = 1.000
-        isRedOn = true
+        red = 1.0
+        green = 0.675
+        blue = 0.94
+        isRedOn = false
         isGreenOn = true
         isBlueOn = true
     }
 }
 
-struct ColorSlider: View {
+struct ColorControlView: View {
     var color: Color
     @Binding var value: Double
     @Binding var isOn: Bool
 
     var body: some View {
-        HStack {
-            Text(color.description.capitalized)
-            Toggle(isOn: $isOn) {
-                EmptyView()
+        VStack {
+            HStack {
+                Toggle(isOn: $isOn) {
+                    Text(color.description.capitalized)
+                        .frame(width: 100, alignment: .leading)
+                }
+                .toggleStyle(SwitchToggleStyle(tint: color))
+                
+                TextField("", value: $value, formatter: NumberFormatter.variableDecimalFormatter)
+                    .frame(width: 60, alignment: .trailing)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .keyboardType(.decimalPad)
+                    .disabled(!isOn)
             }
-            .labelsHidden()
-            .toggleStyle(SwitchToggleStyle(tint: color))
-            Slider(value: $value, in: 0...1)
+            Slider(value: $value, in: 0...1, step: 0.001)
+                .disabled(!isOn)
                 .accentColor(color)
-            Text(String(format: "%.3f", value))
         }
     }
 }
 
-struct ResetButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .frame(maxWidth: .infinity)
-            .padding()
-            .background(Color.orange)
-            .foregroundColor(.white)
-            .clipShape(RoundedRectangle(cornerRadius: 10))
-            .shadow(radius: 5)
+extension NumberFormatter {
+    static var variableDecimalFormatter: NumberFormatter {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.minimumFractionDigits = 1
+        formatter.maximumFractionDigits = 3
+        return formatter
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
